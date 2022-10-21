@@ -3,3 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style-type: none;
+}
+section{
+  padding: 30px 30px;
+  min-width: 500px;
+}
+/* Гамбургер меню */
+input{
+  width: 40px;
+  height: 30px;
+}
+.main-icon{
+  width: 40px;
+  height: 30px;
+}
+.icon{
+  width: 40px;
+  height: 30px;
+}
+.side-bar{
+  display: none;
+}
+input{
+  position: absolute;
+  opacity: 0;
+}
+nav{
+  opacity: 0;
+}
+input:checked ~ nav{
+  opacity: 1;
+}
