@@ -10,9 +10,13 @@ a{
 ul{
   list-style-type: none;
 }
+hr{
+  margin: 10px 0;
+}
 section{
+  background: rgb(170, 170, 170);
   padding: 30px 30px;
-  min-width: 500px;
+  /* min-width: 500px; */
 }
 /* Гамбургер меню */
 input{
@@ -40,3 +44,54 @@ nav{
 input:checked ~ nav{
   opacity: 1;
 }
+
+/* Блок overview */
+.overview{
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+.overview-box{
+  position: relative;
+  width: 100%;
+  /* height: 100px; */
+  margin: 20px 0;
+  padding: 15px;
+  /* text-align: end; */
+  background: rgb(250, 250, 250);
+}
+.overview-icon{
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+}
+.overview .green{
+  background: green;
+}
+.overview .yellow{
+  background: rgb(199, 80, 6);
+}
+.overview .blue{
+  background: blue;
+}
+.overview .red{
+  background: red;
+}
+.overview-info{
+  text-align: end;
+}
+span{
+  font: bold 24px/24px 'Roboto';
+}
+.overview-link{
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+
