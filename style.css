@@ -46,16 +46,15 @@ section{
 .burger-menu{
 	position: relative;
 	margin-bottom: 20px;
+  display: flex;
+	align-items: center;
+	gap: 10px;
 }
 /* input{
   width: 40px;
   height: 30px;
 } */
-label{
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
+
 .main-icon{
   width: 40px;
   height: 30px;
@@ -78,6 +77,7 @@ nav{
 	display: flex;
 	align-items: center;
 	padding: 15px;
+  transform: translate(0, 100px);
 	background: rgb(220, 220, 220);
   opacity: 0;
 	transition: 0.3s;
@@ -140,6 +140,7 @@ span{
 }
 /* Блок reminder */
 .reminder{
+  width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -150,6 +151,21 @@ span{
 	background: rgb(250, 250, 250);
   box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
+.reminder-info-box{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.reminder-col{
+  width: 100%;
+}
+.reminder-btn{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  /* width: 100%; */
+}
+
 .task,
 .employee{
 	display: flex;
@@ -195,12 +211,29 @@ span{
 }
 .reminder-info-table{
   display: grid;
-  grid-template-columns: 0.25fr 1.5fr 0.5fr 0.75fr;
+  grid-template-columns: 0.5fr 1fr 1fr 0.75fr;
   grid-template-rows: repeat(5, 1fr);
 }
+.table-header{
+	color: blue;
+	padding: 10px;
+	border-bottom: 1px solid #999;
+}
+.table-content{
+	padding: 10px;
+	border-bottom: 1px solid #999;
+}
+.table-footer{
+	padding: 10px;
+}
+/* footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} */
 
 
-/* @media (min-width: 500px){
+@media (min-width: 500px){
   .overview{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -218,14 +251,31 @@ span{
   section{
     display: grid;
     grid-template-columns: 200px 1fr;
-  }
-  .side-bar{
-    display: block;
+    padding: 0;
   }
   .burger-menu{
     display: none;
   }
+  .main-info{
+    padding: 20px;
+  }
+  .side-bar{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    background: rgb(220, 220, 220);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75)
+  }
+  .reminder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+  }
 
-} */
+
+}
+
 
 
