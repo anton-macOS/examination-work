@@ -13,76 +13,48 @@
 <body>
   <section>
     <div class="main-menu">
-      
-      <div class="side-bar">
-          <div class="logo">
-            <h2>Company</h2>
-        </div>
-        <div class="side-menu">
-          <ul>
-            <li>
-              <a class="menu-link" href="index.html">
-                <img class="icon" src="img/dashboard_gray.svg" alt="">Dashboard
-              </a>
-            </li>
-            <li>
-              <a class="menu-link" href="pages/user_profile.html">
-                <img class="icon" src="img/account_gray.svg" alt="">User Profile
-              </a>
-            </li>
-            <li>
-              <a class="menu-link" href="#">
-                <img class="icon" src="img/map_gray.svg" alt="">Maps
-              </a>
-            </li>
-            <li>
-              <a class="menu-link" href="#">
-                <img class="icon" src="img/notify_gray.svg" alt="">Notification
-              </a>
-            </li>
-            <li>
-              <a class="menu-link" href="#">
-                <img class="icon" src="img/support_gray.svg" alt="">Support
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="logo">
+        <h2>Company</h2>
       </div>
-      <div class="burger-menu">
-          <input class="burger" type="checkbox">
-          <img class="main-icon" src="img/menu.png" alt=""><h3>Dashboard</h3> 
-          <nav>
-            <ul>
-              <li>
-                <a class="menu-link" href="pages/user_profile.html">
-                <img class="icon" src="img/account_gray.svg" alt="">User Profile
-                </a>
-              </li>
-              <li>
-                <a class="menu-link" href="#">
-                  <img class="icon" src="img/map_gray.svg" alt="">Maps
-                </a>
-              </li>
-              <li>
-                <a class="menu-link" href="#">
-                  <img class="icon" src="img/notify_gray.svg" alt="">Notifications
-                </a>
-              </li>
-              <li>
-                <a class="menu-link" href="#">
-                  <img class="icon" src="img/support_gray.svg" alt="">Support
-                </a>
-              </li>
-            </ul>
-          </nav>
-      </div>
+      <input class="burger" type="checkbox" id="brg">
+      <img class="main-icon" src="img/menu.png" alt="">
+      <label class="burger-label" for="brg"><span>Dashboard</span></label>
+      <nav>
+        <ul>
+          <li>
+            <a class="menu-link" href="index.html">
+              <svg height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path fill="current" d="M6 26h16v-20h-16v20zm0 16h16v-12h-16v12zm20 0h16v-20h-16v20zm0-36v12h16v-12h-16z"/></svg>Dashboard
+            </a>
+          </li>
+          <li>
+            <a class="menu-link" href="pages/user_profile.html">
+              <svg height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg"><path fill="current" d="M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>User Profile
+            </a>
+          </li>
+          <li>
+            <a class="menu-link" href="#">
+              <svg height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg"><path fill="current" d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>Maps
+            </a>
+          </li>
+          <li>
+            <a class="menu-link" href="#">
+              <svg height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path fill="current" d="M36 14l-2.83-2.83-12.68 12.69 2.83 2.83 12.68-12.69zm8.49-2.83l-21.18 21.17-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.82-2.83zm-43.66 15.66l11.17 11.17 2.83-2.83-11.17-11.17-2.83 2.83z"/></svg>Notifications
+            </a>
+          </li>
+          <li>
+            <a class="menu-link" href="#">
+              <svg height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path fill="current" d="M23.99 4c-11.05 0-19.99 8.95-19.99 20s8.94 20 19.99 20c11.05 0 20.01-8.95 20.01-20s-8.96-20-20.01-20zm13.85 12h-5.9c-.65-2.5-1.56-4.9-2.76-7.12 3.68 1.26 6.74 3.81 8.66 7.12zm-13.84-7.93c1.67 2.4 2.97 5.07 3.82 7.93h-7.64c.85-2.86 2.15-5.53 3.82-7.93zm-15.48 19.93c-.33-1.28-.52-2.62-.52-4s.19-2.72.52-4h6.75c-.16 1.31-.27 2.64-.27 4 0 1.36.11 2.69.28 4h-6.76zm1.63 4h5.9c.65 2.5 1.56 4.9 2.76 7.13-3.68-1.26-6.74-3.82-8.66-7.13zm5.9-16h-5.9c1.92-3.31 4.98-5.87 8.66-7.13-1.2 2.23-2.11 4.63-2.76 7.13zm7.95 23.93c-1.66-2.4-2.96-5.07-3.82-7.93h7.64c-.86 2.86-2.16 5.53-3.82 7.93zm4.68-11.93h-9.36c-.19-1.31-.32-2.64-.32-4 0-1.36.13-2.69.32-4h9.36c.19 1.31.32 2.64.32 4 0 1.36-.13 2.69-.32 4zm.51 11.12c1.2-2.23 2.11-4.62 2.76-7.12h5.9c-1.93 3.31-4.99 5.86-8.66 7.12zm3.53-11.12c.16-1.31.28-2.64.28-4 0-1.36-.11-2.69-.28-4h6.75c.33 1.28.53 2.62.53 4s-.19 2.72-.53 4h-6.75z"/></svg>Support
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="main-info">
       <div class="title">
         <h3>Dashboard</h3>
       </div>
       <div class="overview">
-        <div class="overview-box">
+        <div class="overview-box white">
           <div class="overview-icon green">
             <img src="img/data_white.svg" alt="">
           </div>
@@ -95,7 +67,7 @@
             <a href="#"> Get more space</a>
           </div>
         </div>
-        <div class="overview-box">
+        <div class="overview-box white">
           <div class="overview-icon yellow">
             <img src="img/shop_white.svg" alt="">
           </div>
@@ -108,7 +80,7 @@
             <a href="#">Last 24 Hours</a>
           </div>
         </div>
-        <div class="overview-box">
+        <div class="overview-box white">
           <div class="overview-icon blue">
             <img src="img/tag_white.svg" alt="">
           </div>
@@ -121,7 +93,7 @@
             <a href="#">Tracked from GitHub</a>
           </div>
         </div>
-        <div class="overview-box">
+        <div class="overview-box white">
           <div class="overview-icon red">
             <img src="img/paperplane_white.svg" alt="">
           </div>
@@ -136,8 +108,8 @@
         </div>
       </div>
       <div class="notification">
-        <div class="notification-box">
-          <div class="notification-icon green">
+        <div class="notification-box white">
+          <div class="notification-icon transform green">
             <img class="graphic-icon" src="img/graphics.svg" alt="">
           </div>
           <div class="notification-info underline">
@@ -149,8 +121,8 @@
             <a href="#">updated 4 minutes ago</a>
           </div>
         </div>
-        <div class="notification-box">
-          <div class="notification-icon yellow">
+        <div class="notification-box white">
+          <div class="notification-icon transform yellow">
             <img class="graphic-icon" src="img/graphics.svg" alt="">
           </div>
           <div class="notification-info underline">
@@ -162,8 +134,8 @@
             <a href="#">campaign sent 2 days ago</a>
           </div>
         </div>
-        <div class="notification-box">
-          <div class="notification-icon blue">
+        <div class="notification-box white">
+          <div class="notification-icon transform blue">
             <img class="graphic-icon" src="img/graphics.svg" alt="">
           </div>
           <div class="notification-info underline">
@@ -177,19 +149,19 @@
         </div>
       </div>
       <div class="reminder">
-        <div class="reminder-box">
-          <div class="task yellow">
+        <div class="reminder-box white">
+          <div class="task transform yellow">
             <div class="task-box">
               <p class="white">Task:</p>
-              <button class="task-btn white"><img class="task-img" src="img/bug.svg" alt="">Bugs</button>
-              <button class="task-btn white"><img class="task-img" src="img/web.svg" alt="">Website</button>
-              <button class="task-btn white"><img class="task-img" src="img/cloud.svg" alt="">Server</button>
+              <button class="task-btn"><img class="task-img" src="img/bug.svg" alt="">Bugs</button>
+              <button class="task-btn"><img class="task-img" src="img/web.svg" alt="">Website</button>
+              <button class="task-btn"><img class="task-img" src="img/cloud.svg" alt="">Server</button>
             </div>
           </div>
           <div class="reminder-info">
             <div class="reminder-info-box underline">
-              <input name="remind" type="checkbox">
-              <label class="reminder-col" for="remind">Sign contract for "What are conference organizers afraid of?"
+              <input name="remind" type="checkbox" id="col_1">
+              <label class="reminder-col" for="col_1">Sign contract for "What are conference organizers afraid of?"
               </label>
               <div class="reminder-btn">
                 <button><img src="img/edit.png" alt=""></button>
@@ -197,8 +169,8 @@
               </div>
             </div>
             <div class="reminder-info-box underline">
-              <input name="remind" type="checkbox">
-              <label class="reminder-col" for="remind">Line From Great Ukraine Literature? Or E-mails From My Boss?
+              <input name="remind" type="checkbox" id="col_2">
+              <label class="reminder-col" for="col_2">Line From Great Ukraine Literature? Or E-mails From My Boss?
               </label>
               <div class="reminder-btn">
                 <button><img src="img/edit.png" alt=""></button>
@@ -206,8 +178,8 @@
               </div>
             </div>
             <div class="reminder-info-box underline">
-              <input name="remind" type="checkbox">
-              <label class="reminder-col" for="remind">Sing contract for "What are conference organizers afraid of?"
+              <input name="remind" type="checkbox" id="col_3">
+              <label class="reminder-col" for="col_3">Sing contract for "What are conference organizers afraid of?"
               </label>
               <div class="reminder-btn">
                 <button><img src="img/edit.png" alt=""></button>
@@ -215,8 +187,8 @@
               </div>
             </div>
             <div class="reminder-info-box underline">
-              <input name="remind" type="checkbox">
-              <label class="reminder-col" for="remind">Sign contract for "What are conference organizers afraid of?"
+              <input name="remind" type="checkbox" id="col_4">
+              <label class="reminder-col" for="col_4">Sign contract for "What are conference organizers afraid of?"
               </label>
               <div class="reminder-btn">
                 <button><img src="img/edit.png" alt=""></button>
@@ -225,8 +197,8 @@
             </div>
           </div>
         </div>
-        <div class="reminder-box">
-          <div class="employee blue">
+        <div class="reminder-box white">
+          <div class="employee transform blue">
             <p class="employee-title"><span>Employes Stats</span></p>
             <p class="employee-title">New employres on 19th September, 2019</p>
           </div>
