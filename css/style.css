@@ -5,7 +5,7 @@
 }
 body{
   min-width: 365px;
-  font: 400 14px/16px 'Roboto', sans-serif;
+  font: 400 12px/16px 'Roboto', sans-serif;
   color: #5C5C5C;
 }
 a{
@@ -16,10 +16,9 @@ a{
 ul{
   list-style-type: none;
 }
-h2,
-h3{
+h2{
+  font: 700 16px/19px 'Roboto', sans-serif;
   color: #000;
-  padding: 10px;
 }
 button{
 	outline: 0;
@@ -28,7 +27,7 @@ button{
 	background-color: transparent;
 }
 section{
-  background: rgb(200, 200, 200);
+  background: #EAEAEA;
   padding: 30px 30px;
   min-height: 100vh;
 }
@@ -45,7 +44,10 @@ section{
   background: #C32056;
 }
 .white{
-  background: #fff;
+  background: #F6F6F6;
+  margin: 20px 0;
+  padding: 15px;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 .transform{
   transform: translate(0,-35px);
@@ -64,18 +66,17 @@ svg{
   display: flex;
 	align-items: center;
 	gap: 10px;
+  color: #808080;
 }
 .underline{
-  border-bottom: 1px solid #5C5C5C;
+  border-bottom: 1px solid #808080;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 .menu-link{
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 10px 0;
-  padding: 10px;
+  padding: 15px;
 }
 .menu-link:hover{
   color: white;
@@ -85,13 +86,14 @@ svg{
   fill: gray;
 }
 .menu-link:hover svg{
-  fill: white;
+  fill: #fff;
 }
 /* Гамбургер меню */
 .main-menu{
   position: relative;
   display: flex;
   gap: 10px;
+  background: #EAEAEA;
 }
 .main-icon{
   width: 40px;
@@ -113,7 +115,7 @@ svg{
 nav{
   overflow: hidden;
   height: 0;
-  background: rgb(200, 200, 200);
+  background: #F2F2F2;
 }
 .burger:checked ~ nav{
   position: absolute;
@@ -138,9 +140,6 @@ nav{
 .overview-box{
   position: relative;
   width: 100%;
-  margin: 20px 0;
-  padding: 15px;
-  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 .overview-icon{
   position: absolute;
@@ -167,9 +166,6 @@ nav{
 }
 .notification-box{
 	width: 100%;
-	margin: 20px 0;
-	padding: 15px;
-  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 .notification-icon{
 	width: 100%;
@@ -178,7 +174,8 @@ nav{
 .notification-info{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+  font: 400 14px/16px 'Roboto', sans-serif;
 }
 .graphic-icon{
 	width: 100%;
@@ -192,9 +189,6 @@ nav{
 }
 .reminder-box{
 	width: 100%;
-	margin: 20px 0;
-	padding: 10px;
-  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 }
 .reminder-info-box{
   width: 100%;
@@ -214,7 +208,7 @@ nav{
 .reminder-btn{
   display: flex;
   justify-content: end;
-  gap: 10px;
+  gap: 30px;
 }
 .task,
 .employee{
@@ -224,7 +218,7 @@ nav{
 .employee{
 	flex-direction: column;
 	gap: 3px;
-  padding: 10px;
+  padding: 15px;
 }
 .employee-title{
   color: #fff;
@@ -236,7 +230,8 @@ nav{
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 10px;
-	padding: 10px;
+	padding: 15px;
+  color: #fff;
 }
 .task-btn{
 	display: flex;
@@ -246,7 +241,7 @@ nav{
   color: #fff;
 }
 .task-btn:hover{
-  background: rgba(242, 128, 57, 0.862);
+  background: rgba(217, 217, 217, 0.3);
 }
 .task-img{
 	margin-right: 5px;
@@ -291,6 +286,7 @@ footer{
   justify-content: center;
   padding: 15px;
   margin: 20px 0;
+  background: #fff;
 }
 .photo{
   position: absolute;
@@ -304,18 +300,21 @@ footer{
   line-height: 17px;
   margin-top: 70px;
 }
+.ceo,
+.ceo-name{
+  margin-bottom: 15px;
+}
 .profile{
   width: 100%;
   margin-top: 20px; 
   padding: 15px;
 }
-/* Bug */
 .title-text{
   color: #fff;
 }
 .title-profile{
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   line-height: 24px;
 }
 .first-line{
@@ -356,6 +355,7 @@ label{
   height: 40px;
   padding: 0 10px;
   border: 0;
+  background: transparent;
   border-bottom: 1px solid #5C5C5C;
 }
 .info:focus{
@@ -366,6 +366,7 @@ textarea{
   padding: 0 10px;
   border: 0;
   border-bottom: 1px solid #5C5C5C;
+  background: transparent;
 }
 textarea:focus{
   outline: none;
@@ -399,7 +400,7 @@ textarea:focus{
 @media (min-width: 800px){
   section{
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 170px 1fr;
     padding: 0;
   }
   .burger-menu{
@@ -412,12 +413,18 @@ textarea:focus{
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: rgb(220, 220, 220);
+    background: #F6F6F6;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.50)
   }
   nav{
+    position: fixed;
+    top: 70px;
+    left: 15px;
     height: 100%;
     background: transparent;
+  }
+  ul{
+    width: 140px;
   }
   .burger,
   .main-icon,
@@ -425,8 +432,8 @@ textarea:focus{
     display: none;
   }
   .logo{
-    display: block;
-    padding: 20px;
+    display: inline-block;
+    padding: 20px 30px;
     border-bottom: 1px solid #000;
   }
   .title{
@@ -444,7 +451,7 @@ textarea:focus{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 300px;
-    gap: 20px;
+    gap: 15px;
   }
   .founder{
     grid-column: 2 / 3;
