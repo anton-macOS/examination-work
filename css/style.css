@@ -78,9 +78,22 @@ svg{
   gap: 10px;
   background: #EAEAEA;
 }
+.logo{
+  display: none;
+}
+.burger{
+  position: absolute;
+  top: -30px;
+  opacity: 0;
+}
 .main-icon{
+  width: 100%;
   width: 40px;
   height: 30px;
+}
+.close{
+  display: block;
+  width: 100%;
 }
 .close-label{
   position: absolute;
@@ -88,22 +101,10 @@ svg{
   justify-content: center;
   top: 0;
   left: 0px;
-  width: 30px;
-  height: 30px;
   display: none;
+  animation-name: close-btn;
+  animation-duration: .7s;
 }
-.logo{
-  display: none;
-}
-.burger{
-  position: absolute;
-  top: -30px;
-  width: 40px;
-  height: 30px;
-  opacity: 0;
-  transition: .3s;
-}
-
 .nav-main{
   overflow: hidden;
   height: 0;
@@ -117,7 +118,8 @@ svg{
   border-radius: 0 30px 30px 30px;
   height: auto;
   z-index: 100;
-  animation-name: abc;
+  background: rgb(115, 139, 246);
+  animation-name: open-btn;
   animation-duration: .7s;
 }
 .burger:checked + .burger-label{
@@ -126,7 +128,7 @@ svg{
 .burger:checked ~ .close-label{
   display: block;
 }
-@keyframes abc{
+@keyframes open-btn{
   0%{
     width: 0;
     height: 0;
@@ -134,6 +136,14 @@ svg{
   100%{
     width: 300px;
     height: 300px;
+  }
+}
+@keyframes close-btn{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
   }
 }
 .burger-label{
@@ -313,11 +323,10 @@ svg{
 	border-bottom: 1px solid #999;
 }
 .salary{
-  width: 100%;
-  align-items: end;
-}
-.salary{
   text-align: end;
+}
+.state{
+  text-align: center;
 }
 .table-footer{
 	padding: 10px;
